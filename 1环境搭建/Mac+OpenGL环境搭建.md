@@ -46,7 +46,13 @@ $(glew_header)
 $(glfw_header)
 // library search path
 $(glew_lib)
-$(glfw_lib)
+$(glfw_lib)  
+```
+也可以复制如下的代码去   
+
+```objc 
+$(glew_header) $(glfw_header)    
+$(inherited) $(glew_lib) $(glfw_lib) 
 ```  
 
 ![](Images/2.png) 
@@ -252,4 +258,11 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 如果出现   
 
 ![](Images/8.png)   
-表示你已经成功了！
+表示你已经成功了！ 
+
+### 参考链接：
+1.[glew](http://glew.sourceforge.net/)  
+2.[glfw](http://www.glfw.org/download.html)   
+3.[视频教学](https://www.youtube.com/watch?v=lTmM3Y8SMOM)   
+4.[安装配置文件](http://www.jianshu.com/p/e753b36f79c3)  
+5.[图文讲解](http://seaneshbaugh.com/posts/creating-an-opengl-4-1-program-with-glew-and-glfw-in-xcode)  
