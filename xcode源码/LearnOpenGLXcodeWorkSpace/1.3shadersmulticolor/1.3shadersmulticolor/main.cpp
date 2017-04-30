@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 // GLEW
 #define GLEW_STATIC
 #include <GL/glew.h>
@@ -13,18 +13,22 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 // Shaders
 const GLchar* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 position;\n"                         //定了输入变量的位置值
+"layout (location = 0) in vec3 position;\n"// 位置变量的属性位置值为 0
+"layout (location = 1) in vec3 color;\n" // 颜色变量的属性位置值为 1
+"out vec3 ourColor;\n"
 "void main()\n"
 "{\n"
 "gl_Position = vec4(position, 1.0);\n"
+"ourColor = color;\n"       // 将ourColor设置为我们从顶点数据那里得到的输入颜色
 "}\0";
-
 const GLchar* fragmentShaderSource = "#version 330 core\n"
+"in vec3 ourColor;\n"
 "out vec4 color;\n"
 "void main()\n"
 "{\n"
-"color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+"color = vec4(ourColor, 1.0f);\n"
 "}\n\0";
+
 
 int startWindowBefore(GLFWwindow** outputWindow){
     std::cout << "Starting GLFW context, OpenGL 3.3" << std::endl;
@@ -119,9 +123,10 @@ int main()
     
     //4.VAO.VBO
     GLfloat vertices[] = {
-        -0.5f, -0.5f, 0.0f, //Left
-        0.5f, -0.5f, 0.0f,  //Right
-        0.0f,  0.5f, 0.0f   //Top
+        // 位置              // 颜色
+        0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // 右下
+        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // 左下
+        0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // 顶部
     };
     
     //4.0 初始化VAO,VBO
@@ -137,8 +142,13 @@ int main()
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
     //4.3 设置顶点属性指针,函数告诉OpenGL该如何解析顶点数据
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
+    //位置属性
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)0);
     glEnableVertexAttribArray(0);
+    
+    //颜色属性
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)(3* sizeof(GLfloat)));//1颜色属性,3指的是vec3,6代表步长，3*sizeof代表偏移量
+    glEnableVertexAttribArray(1);
     
     //4.4 解绑VAO
     glBindVertexArray(0);

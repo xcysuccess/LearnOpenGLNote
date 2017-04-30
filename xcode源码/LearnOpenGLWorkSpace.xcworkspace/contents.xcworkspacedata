@@ -17,6 +17,21 @@
       location = "group:LearnOpenGLXcodeWorkSpace/1.2home02/1.2home02.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:LearnOpenGLXcodeWorkSpace/1.3home03/1.3home03.xcodeproj">
+      location = "group:LearnOpenGLXcodeWorkSpace/1.2home03/1.2home03.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.3shaders/1.3shaders.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.3shadersmulticolor/1.3shadersmulticolor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.3shadersmanager/1.3shadersmanager.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.3shadershome01/1.3shadershome01.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.3shadershome03/1.3shadershome03.xcodeproj">
    </FileRef>
 </Workspace>

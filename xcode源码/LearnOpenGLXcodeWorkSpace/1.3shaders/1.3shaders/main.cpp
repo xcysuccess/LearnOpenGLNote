@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 // GLEW
 #define GLEW_STATIC
 #include <GL/glew.h>
@@ -13,18 +13,22 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 // Shaders
 const GLchar* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 position;\n"                         //定了输入变量的位置值
+"layout (location = 0) in vec3 position;\n"
+"layout (location = 1) in vec3 color;\n"
+"out vec3 ourColor;\n"
 "void main()\n"
 "{\n"
 "gl_Position = vec4(position, 1.0);\n"
+"ourColor = color;\n"
 "}\0";
-
 const GLchar* fragmentShaderSource = "#version 330 core\n"
 "out vec4 color;\n"
+"uniform vec4 ourColor;\n"
 "void main()\n"
 "{\n"
-"color = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+"color = ourColor;\n"
 "}\n\0";
+
 
 int startWindowBefore(GLFWwindow** outputWindow){
     std::cout << "Starting GLFW context, OpenGL 3.3" << std::endl;
@@ -156,6 +160,13 @@ int main()
         
         //绘制物体
         glUseProgram(shaderProgram);
+        
+        // 更新uniform颜色
+        GLfloat timeValue = glfwGetTime();//获取运行的秒数
+        GLfloat greenValue = (sin(timeValue) / 2) + 0.5;//让颜色在0.0到1.0之间改变
+        GLint vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");//查询uniform ourColor的位置值
+        glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);//通过glUniform4f函数设置uniform值
+        
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
         glBindVertexArray(0);
