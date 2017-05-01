@@ -34,4 +34,10 @@
    <FileRef
       location = "group:LearnOpenGLXcodeWorkSpace/1.3shadershome03/1.3shadershome03.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.4textures/1.4textures.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.4texturesmulti/1.4texturesmulti.xcodeproj">
+   </FileRef>
 </Workspace>

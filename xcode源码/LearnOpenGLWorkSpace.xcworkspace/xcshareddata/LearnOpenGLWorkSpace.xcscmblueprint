@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D7961074305EECEC68DD2BC53E5758BCEB50D863",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D7961074305EECEC68DD2BC53E5758BCEB50D863" : 9223372036854775807,
+    "6866465F70BAF86F0290E3F98781F2969BBAAC08" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "11A0C6EE-DB77-43E0-A8E4-9DC495A0E5C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D7961074305EECEC68DD2BC53E5758BCEB50D863" : "git\/",
+    "6866465F70BAF86F0290E3F98781F2969BBAAC08" : "git\/SOIL\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LearnOpenGLWorkSpace",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "xcode源码\/LearnOpenGLWorkSpace.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DeVaukz\/SOIL.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6866465F70BAF86F0290E3F98781F2969BBAAC08"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xcysuccess\/LearnOpenGLNote.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D7961074305EECEC68DD2BC53E5758BCEB50D863"
+    }
+  ]
+}
