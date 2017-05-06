@@ -40,4 +40,16 @@
    <FileRef
       location = "group:LearnOpenGLXcodeWorkSpace/1.4texturesmulti/1.4texturesmulti.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.4home01/1.4home01.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.4home02/1.4home02.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.4home03/1.4home03.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LearnOpenGLXcodeWorkSpace/1.5transformations/1.5transformations.xcodeproj">
+   </FileRef>
 </Workspace>
