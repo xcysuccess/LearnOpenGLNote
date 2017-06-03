@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0338951EE2B41400191881 /* libSOIL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A91348A1EB728CE00D6B15F /* libSOIL.a */; };
 		9A91347D1EB7259100D6B15F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A91347C1EB7259100D6B15F /* main.cpp */; };
 		9A9134851EB725A000D6B15F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9134841EB725A000D6B15F /* OpenGL.framework */; };
 		9A9134871EB7267600D6B15F /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9134861EB7267600D6B15F /* libGLEW.2.0.0.dylib */; };
 		9A9134891EB7268100D6B15F /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9134881EB7268100D6B15F /* libglfw.3.2.dylib */; };
-		9A91348D1EB729C100D6B15F /* libSOIL.1.07.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A91348C1EB729C100D6B15F /* libSOIL.1.07.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A91348D1EB729C100D6B15F /* libSOIL.1.07.dylib in Frameworks */,
+				9A0338951EE2B41400191881 /* libSOIL.a in Frameworks */,
 				9A9134891EB7268100D6B15F /* libglfw.3.2.dylib in Frameworks */,
 				9A9134871EB7267600D6B15F /* libGLEW.2.0.0.dylib in Frameworks */,
 				9A9134851EB725A000D6B15F /* OpenGL.framework in Frameworks */,
@@ -259,9 +259,9 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(soil_lib)",
 					"$(glew_lib)",
 					"$(glfw_lib)",
-					"$(soil_lib)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -278,9 +278,9 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(soil_lib)",
 					"$(glew_lib)",
 					"$(glfw_lib)",
-					"$(soil_lib)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -305,6 +305,7 @@
 				9A9134821EB7259100D6B15F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

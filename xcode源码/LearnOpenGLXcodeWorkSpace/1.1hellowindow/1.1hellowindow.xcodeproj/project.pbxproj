@@ -38,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9403101EB3240F0081A960 /* libglfw.3.2.dylib in Frameworks */,
 				9A94030E1EB324000081A960 /* libGLEW.2.0.0.dylib in Frameworks */,
+				9A9403101EB3240F0081A960 /* libglfw.3.2.dylib in Frameworks */,
 				9A94030C1EB323F30081A960 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +293,7 @@
 				9A9403091EB323B20081A960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

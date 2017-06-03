@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0338991EE2B74100191881 /* libSOIL.1.07.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0338981EE2B74100191881 /* libSOIL.1.07.dylib */; };
 		9A91349E1EB735E600D6B15F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A91349D1EB735E600D6B15F /* main.cpp */; };
 		9A9134A61EB735F300D6B15F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9134A51EB735F300D6B15F /* OpenGL.framework */; };
 		9A9134A81EB7360200D6B15F /* libGLEW.2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9134A71EB7360200D6B15F /* libGLEW.2.0.0.dylib */; };
 		9A9134AA1EB7361200D6B15F /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9134A91EB7361200D6B15F /* libglfw.3.2.dylib */; };
-		9A9134AC1EB7371300D6B15F /* libSOIL.1.07.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9134AB1EB7371300D6B15F /* libSOIL.1.07.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A0338961EE2B71F00191881 /* libSOIL.1.07.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSOIL.1.07.dylib; path = ../../../SOIL/build/Debug/libSOIL.1.07.dylib; sourceTree = "<group>"; };
+		9A0338981EE2B74100191881 /* libSOIL.1.07.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSOIL.1.07.dylib; path = ../../../../../../usr/local/lib/libSOIL.1.07.dylib; sourceTree = "<group>"; };
 		9A91349A1EB735E600D6B15F /* 1.4texturesmulti */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 1.4texturesmulti; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A91349D1EB735E600D6B15F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		9A9134A51EB735F300D6B15F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -43,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9134AC1EB7371300D6B15F /* libSOIL.1.07.dylib in Frameworks */,
+				9A0338991EE2B74100191881 /* libSOIL.1.07.dylib in Frameworks */,
 				9A9134AA1EB7361200D6B15F /* libglfw.3.2.dylib in Frameworks */,
 				9A9134A81EB7360200D6B15F /* libGLEW.2.0.0.dylib in Frameworks */,
 				9A9134A61EB735F300D6B15F /* OpenGL.framework in Frameworks */,
@@ -84,6 +86,8 @@
 		9A9134A41EB735F300D6B15F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A0338981EE2B74100191881 /* libSOIL.1.07.dylib */,
+				9A0338961EE2B71F00191881 /* libSOIL.1.07.dylib */,
 				9A9134AB1EB7371300D6B15F /* libSOIL.1.07.dylib */,
 				9A9134A91EB7361200D6B15F /* libglfw.3.2.dylib */,
 				9A9134A71EB7360200D6B15F /* libGLEW.2.0.0.dylib */,
@@ -303,6 +307,7 @@
 				9A9134A31EB735E600D6B15F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -262,8 +262,6 @@
 					"$(glew_lib)",
 					"$(glfw_lib)",
 					"$(soil_lib)",
-					/usr/local/Cellar/glew/2.0.0/lib,
-					/usr/local/Cellar/glfw/3.2.1/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -283,8 +281,6 @@
 					"$(glew_lib)",
 					"$(glfw_lib)",
 					"$(soil_lib)",
-					/usr/local/Cellar/glew/2.0.0/lib,
-					/usr/local/Cellar/glfw/3.2.1/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -309,6 +305,7 @@
 				9A41D8E61EBDCFE1001AF19A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
